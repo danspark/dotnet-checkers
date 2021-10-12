@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "csharp", "csharp", "{1DACC06F-57E2-4DCA-AEE7-346768241E97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetCheckers.Core", "csharp\DotnetCheckers.Core\DotnetCheckers.Core.csproj", "{B2C19F5E-E2A3-4C03-9F88-FC667487B6B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2C19F5E-E2A3-4C03-9F88-FC667487B6B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2C19F5E-E2A3-4C03-9F88-FC667487B6B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2C19F5E-E2A3-4C03-9F88-FC667487B6B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2C19F5E-E2A3-4C03-9F88-FC667487B6B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B2C19F5E-E2A3-4C03-9F88-FC667487B6B8} = {1DACC06F-57E2-4DCA-AEE7-346768241E97}
+	EndGlobalSection
+EndGlobal
