@@ -18,7 +18,7 @@ type Cell =
 type Board =
     { CurrentTurn: Player
       NextTurn: Player
-      Cells: Cell [] array }
+      Cells: Cell[,] }
 
 [<RequireQualifiedAccess>]
 module Piece =
@@ -60,7 +60,7 @@ module Board =
                [| b; e; b; e; e; e; w; e |]
                [| e; b; e; e; e; w; e; w |]
                [| b; e; b; e; e; e; w; e |]
-               [| e; b; e; e; e; w; e; w |] |]
+               [| e; b; e; e; e; w; e; w |] |] |> array2D
 
         { CurrentTurn = playerBlack
           NextTurn = playerWhite
@@ -75,7 +75,7 @@ module Board =
             for row in 0 .. 7 do
                 Console.BackgroundColor <- background.[index]
 
-                board.Cells.[col].[row]
+                board.Cells.[col, row]
                 |> Cell.print ConsoleColor.Red ConsoleColor.White
 
                 index <- 1 - index
