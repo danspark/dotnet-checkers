@@ -16,12 +16,25 @@ type Cell =
 type Board = {
     CurrentTurn: Player
     NextTurn: Player
-    Cells: Cell[,]
+    Cells: Cell[] array
 }
 
 module Board =
     let initialize playerBlack playerWhite =
-        let cells: Cell[,] = Array2D.init 8 8 (fun row col -> Empty)
+        let e = Empty
+        let b = Black (Pawn playerBlack)
+        let w = White (Pawn playerWhite)
+        
+        let cells = [|
+            [| b; e; b; e; e; e; w; e |]
+            [| e; b; e; e; e; w; e; w |]
+            [| b; e; b; e; e; e; w; e |]
+            [| e; b; e; e; e; w; e; w |]
+            [| b; e; b; e; e; e; w; e |]
+            [| e; b; e; e; e; w; e; w |]
+            [| b; e; b; e; e; e; w; e |]
+            [| e; b; e; e; e; w; e; w |]
+        |]
         
         {
             CurrentTurn = playerBlack
